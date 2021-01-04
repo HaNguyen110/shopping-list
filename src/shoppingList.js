@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./index.css";
 import firebase, { storage } from "./Config/firebase";
+import {Link} from 'react-router-dom'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronRight,
@@ -238,7 +239,7 @@ const ShoppingList = () => {
           ))}
         </div>
         <div className="footer">
-        <button onClick={() => show()} className="btn-share"> Share </button>
+        <Link  lassName="btn-share" to='/share'> Share </Link>
         <div className="total">Total: {totalItemCount}</div> 
         </div>
         

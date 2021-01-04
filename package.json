@@ -2,7 +2,7 @@
   "name": "starter",
   "version": "0.1.0",
   "private": true,
-  "homepage": "",
+  "homepage": "http://HaNguyen110.github.io/shopping-list",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
@@ -18,7 +18,8 @@
     "react-scripts": "3.4.3",
     "uuid": "^8.3.2"
   },
-  "scripts": {
+  "scripts": {"predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
